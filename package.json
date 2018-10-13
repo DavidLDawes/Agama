@@ -72,7 +72,7 @@
     "socket.io": "^1.7.3",
     "test": "^0.6.0",
     "tx-decoder": "git://github.com/pbca26/tx-decoder.git",
-    "webpack": "^4.16.0",
+    "webpack": "^4.20.2",
     "wif": "^2.0.6"
   }
 }
