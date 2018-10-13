@@ -4,7 +4,7 @@ const electronPath = require('electron') // Require Electron from the binaries i
 const path = require('path')
 const chai = require('chai')
 const timeout = 7500;
-describe('Application launch', function () {
+describe('Application launch testing native KMD coin', function () {
   this.timeout(timeout)
   before(function () {
     this.gotDomReadyCount = 0
@@ -37,7 +37,7 @@ describe('Application launch', function () {
   it('has a native coin list that takes kmd', function (done) {
     // Wait for the left button for native mode coins is visible
     this.app.client.element('#react-select-3--value').waitForVisible(3000)
-    // Click on it and enter kmd<enter> selecting
+    // Click on it and enter kmd<enter>
     this.app.client.element('#react-select-3--value').click().keys('kmd\r\n').then(function () {
       done()
       return true
